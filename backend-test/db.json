@@ -1,0 +1,124 @@
+{
+    "vendas": [
+        {
+            "id": "br-sp",
+            "nome": "São Paulo",
+            "lojas": [
+                {
+                    "cod": "sp-001",
+                    "pedidos": 101,
+                    "vendas": 51,
+                    "valor": 5501
+                },
+                {
+                    "cod": "sp-002",
+                    "pedidos": 102,
+                    "vendas": 52,
+                    "valor": 5521
+                },
+                {
+                    "cod": "sp-003",
+                    "pedidos": 103,
+                    "vendas": 53,
+                    "valor": 5533
+                },
+                {
+                    "cod": "sp-004",
+                    "pedidos": 104,
+                    "vendas": 54,
+                    "valor": 5535
+                }
+            ]
+        },
+        {
+            "id": "br-rj",
+            "nome": "Rio de Janeiro",
+            "lojas": [
+                {
+                    "cod": "rj-001",
+                    "pedidos": 105,
+                    "vendas": 55,
+                    "valor": 5505
+                },
+                {
+                    "cod": "rj-002",
+                    "pedidos": 106,
+                    "vendas": 56,
+                    "valor": 5526
+                },
+                {
+                    "cod": "rj-003",
+                    "pedidos": 107,
+                    "vendas": 57,
+                    "valor": 5537
+                },
+                {
+                    "cod": "rj-004",
+                    "pedidos": 108,
+                    "vendas": 58,
+                    "valor": 5538
+                }
+            ]
+        },
+        {
+            "id": "sc-rj",
+            "nome": "Santa Cararina",
+            "lojas": [
+                {
+                    "cod": "sc-001",
+                    "pedidos": 109,
+                    "vendas": 59,
+                    "valor": 5509
+                },
+                {
+                    "cod": "sc-002",
+                    "pedidos": 112,
+                    "vendas": 51,
+                    "valor": 5521
+                },
+                {
+                    "cod": "sc-003",
+                    "pedidos": 123,
+                    "vendas": 52,
+                    "valor": 5533
+                },
+                {
+                    "cod": "sc-004",
+                    "pedidos": 143,
+                    "vendas": 54,
+                    "valor": 5540
+                }
+            ]
+        },
+        {
+            "id": "ce-rj",
+            "nome": "Ceará",
+            "lojas": [
+                {
+                    "cod": "ce-001",
+                    "pedidos": 150,
+                    "vendas": 55,
+                    "valor": 5550
+                },
+                {
+                    "cod": "ce-002",
+                    "pedidos": 162,
+                    "vendas": 56,
+                    "valor": 5560
+                },
+                {
+                    "cod": "ce-003",
+                    "pedidos": 173,
+                    "vendas": 57,
+                    "valor": 5570
+                },
+                {
+                    "cod": "ce-004",
+                    "pedidos": 183,
+                    "vendas": 85,
+                    "valor": 5830
+                }
+            ]
+        }
+    ]
+}
