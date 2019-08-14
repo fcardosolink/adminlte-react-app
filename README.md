@@ -15,8 +15,6 @@ AdminLTE - React - Exemplo
 - Exemplo de Dashboard dinâminco implementado
 
 ### Próximos passos
-- Preparar modelo de página com lista simples (list)
-- Renderização de Lista recuperada a partir de leitura de api
 - Preparar login de acesso
 - Autenticação com base em leitura de api
 
