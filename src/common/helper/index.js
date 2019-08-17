@@ -11,3 +11,10 @@ export const If = props => {
 export const Anchor = props => (
     <a {...props}>{ props.children }</a>
 )
+
+export const Video = props => (
+    <div className="embed-responsive embed-responsive-16by9">
+        <iframe className="embed-responsive-item" src={props.src ||'#'}
+            frameborder="0" allowfullscreen></iframe>
+    </div>
+)
