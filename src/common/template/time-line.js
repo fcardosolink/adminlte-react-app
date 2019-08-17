@@ -1,6 +1,4 @@
 import React from 'react'
-import { Anchor } from '../helper'
-
 
 export const TimeLineLabel = props => (
     <li className="time-label">
@@ -47,7 +45,6 @@ export const TimeLine = props => (
           <ul className="timeline">
             { props.children }
 
-            {/*  END timeline item  */}
             <li>
               <i className="fa fa-clock-o bg-gray"></i>
             </li>

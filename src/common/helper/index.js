@@ -14,7 +14,7 @@ export const Anchor = props => (
 
 export const Video = props => (
     <div className="embed-responsive embed-responsive-16by9">
-        <iframe className="embed-responsive-item" src={props.src ||'#'}
+        <iframe title="video" className="embed-responsive-item" src={props.src ||'#'}
             frameborder="0" allowfullscreen></iframe>
     </div>
 )
