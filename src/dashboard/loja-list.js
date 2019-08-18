@@ -1,5 +1,5 @@
 import React from 'react'
-import SimpleList from '../common/widget/simple-list'
+import SimpleTable from '../common/tables/simple-table'
 import { LabelSucess, LabelInfo, LabelWarning, LabelDanger } from '../common/ui'
 
 export default props => {
@@ -16,32 +16,31 @@ export default props => {
         return <LabelDanger title="perigo"/>
     }
 
-    const dicionario = () => {
+    const colunas = () => {
         return [
             {
                 title: 'Loja',
-                value: col => col['cod']
+                name: 'cod',
             },
             {
                 title: 'Pedidos',
-                value: col => col['pedidos']
+                name: 'pedidos',
             },
             {
                 title: 'Vendas',
-                value: col => col['vendas']
+                name: 'vendas',
             },
             {
                 title: 'R$',
-                value: col => col['valor']
+                name: 'valor',
             },
             {
                 title: 'Situacao',
+                name: 'situacao',
                 value: col => label_status(col)
             }
         ]
     }
-
-
 
     const lojas_da_cidade = (vendas, id_cidade) => {
         for( let i in vendas) {
@@ -60,11 +59,14 @@ export default props => {
     }
 
     return (
-        <SimpleList 
+        <SimpleTable 
             title={titulo_atual(props.vendas, props.id_cidade)}
-            dic={dicionario()}
+            columns={colunas()}
             data={lojas_da_cidade(props.vendas, props.id_cidade)}
             row_key={col => col['cod']}
+            onClickHeader={ (coluna, asc) => props.ordenarCidade(coluna, asc) }
+            sort_column={ props.ordenar_por }
+            sort_asc={ props.ordem_asc }
         />
     )
 }

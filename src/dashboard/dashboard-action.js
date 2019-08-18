@@ -12,9 +12,16 @@ export const obterVendas = () => {
 }
 
 export const selecionarCidade = (cidade) => {
-    console.log(cidade)
-    return {
+     return {
         type: act.DASHBOARD_SELECIONA_CIDADE,
         payload: cidade
+    }
+}
+
+
+export const ordenarCidade = (ordem_coluna, ordem_asc) => {
+    return {
+        type: act.DASHBOARD_ORDENA_CIDADE,
+        payload: { ordem_coluna, ordem_asc }
     }
 }

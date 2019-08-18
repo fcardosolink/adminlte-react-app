@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import { obterVendas, selecionarCidade } from './dashboard-action'
+import { obterVendas, selecionarCidade, ordenarCidade } from './dashboard-action'
 import { ContentSection, Row, Grid } from '../common/layout'
 
 
@@ -30,7 +30,13 @@ class DashboardDinamico extends Component {
                         />
                     </Grid>
                     <Grid cols="12 8 8">
-                        <LojaList vendas={this.props.dashboard.vendas} id_cidade={this.props.dashboard.cidade_atual}/>
+                        <LojaList 
+                            vendas={this.props.dashboard.vendas} 
+                            id_cidade={this.props.dashboard.cidade_atual}
+                            ordenar_por={this.props.dashboard.ordem_coluna}
+                            ordem_asc={this.props.dashboard.ordem_asc}
+                            ordenarCidade= { (coluna, asc) => this.props.ordenarCidade(coluna, asc) }
+                            />
                     </Grid>
                 </Row>
             </ContentSection>
@@ -40,6 +46,6 @@ class DashboardDinamico extends Component {
 }
 
 const mapStateToProps = state => ({dashboard: state.dashboard})
-const mapDispatchToProps = dispatch => bindActionCreators({obterVendas, selecionarCidade}, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({obterVendas, selecionarCidade, ordenarCidade}, dispatch)
 export default connect(mapStateToProps, mapDispatchToProps)(DashboardDinamico)
 

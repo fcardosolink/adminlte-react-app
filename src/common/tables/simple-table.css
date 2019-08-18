@@ -1,0 +1,10 @@
+.hover_parent_st__cust .show_on_hover_st__cust {
+    visibility: hidden;
+}
+
+.hover_parent_st__cust:hover .show_on_hover_st__cust{
+   pointer-events: none;
+   color: GrayText;
+   visibility: visible;
+}
+
